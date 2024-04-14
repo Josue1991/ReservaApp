@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="722dp"
+        android:background="@drawable/principal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444">
+        <!-- Agrega tus otros elementos de diseño aquí -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIngreso"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:text="Ingresar"
+        android:textAlignment="center"
+        android:textColor="#34495E"
+        android:textSize="16sp"
+        app:backgroundTint="#E5E7E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:text="Registrarse"
+        android:textColor="#34495E"
+        android:textSize="16sp"
+        app:backgroundTint="#E5E7E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="362dp"
+        android:layout_height="67dp"
+        android:text="Soccer Now"
+        android:textAlignment="center"
+        android:textColor="#CACFD2"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="#CACFD2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="385dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Ingrese su e-mail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#CACFD2"
+        android:textColorHighlight="#CACFD2"
+        android:textColorHint="#CACFD2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="394dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese su password "
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#CACFD2"
+        android:textColorHighlight="#CACFD2"
+        android:textColorHint="#CACFD2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="376dp"
+        android:layout_height="49dp"
+        android:text="Ingrese sus credenciales"
+        android:textAlignment="center"
+        android:textColor="#CACFD2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+</androidx.constraintlayout.widget.ConstraintLayout>

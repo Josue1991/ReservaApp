@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "882802794260",
+    "project_id": "futapp-c57b7",
+    "storage_bucket": "futapp-c57b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882802794260:android:c946b324fc8b8828912c01",
+        "android_client_info": {
+          "package_name": "com.example.appreserva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDleOH8KBssDDiWVu-Nc5-CkP_U7At2XcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

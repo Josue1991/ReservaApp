@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="729dp"
+        android:background="@drawable/registro"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="-1dp"
+        tools:ignore="MissingConstraints">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="364dp"
+        android:layout_height="48dp"
+        android:text="Registro de Usuario"
+        android:textAlignment="center"
+        android:textColor="#EFF3EF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <EditText
+        android:id="@+id/txNewNombre"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Ingrese su Nombre"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#EFE9E9"
+        android:textColorHint="#EFE9E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <EditText
+        android:id="@+id/txtNewEmail"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese su Email"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#EFE9E9"
+        android:textColorHint="#EFE9E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <EditText
+        android:id="@+id/txtNewPassword"
+        android:layout_width="334dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Ingrese un Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#EFE9E9"
+        android:textColorHint="#EFE9E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <EditText
+        android:id="@+id/idRePassword"
+        android:layout_width="337dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Re-ingrese su Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#EFE9E9"
+        android:textColorHint="#EFE9E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <EditText
+        android:id="@+id/txtNewUsusario"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Ingrese su Usuario"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#EFE9E9"
+        android:textColorHint="#EFE9E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <Button
+        android:id="@+id/btIngresarNew"
+        android:layout_width="233dp"
+        android:layout_height="53dp"
+        android:text="Guardar"
+        android:textColor="#2E7D32"
+        app:backgroundTint="#BAC5C6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="231dp"
+        android:layout_height="54dp"
+        android:text="Cancelar"
+        android:textColor="#D84315"
+        app:backgroundTint="#BAC5C6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+</androidx.constraintlayout.widget.ConstraintLayout>
