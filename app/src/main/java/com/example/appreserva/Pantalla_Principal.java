@@ -13,7 +13,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Pantalla_Principal extends AppCompatActivity {
-    private static final String PREF_FILE_NAME = "Prueba";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

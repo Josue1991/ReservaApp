@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "mi_base_de_datos.db";
+    private static final String DATABASE_NAME = "reserva.db";
     private static final int DATABASE_VERSION = 1;
 
     public Database(Context context) {
@@ -15,7 +15,7 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE usuarios ("
-                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "id INTEGER PRIMARY KEY,"
                 + "nombre TEXT,"
                 + "email TEXT,"
                 + "usuario TEXT,"

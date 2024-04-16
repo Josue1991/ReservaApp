@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    id("com.google.gms.google-services")
 }
 
 
@@ -30,12 +31,18 @@ android {
 }
 
 dependencies {
+    val sqlite_version = "2.4.0"
+
+    // Java language implementation
+    implementation("androidx.sqlite:sqlite:$sqlite_version")
 
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.play.services.base)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -10,6 +10,6 @@ public final class Contrato {
         public static final String COLUMN_EMAIL = "email";
         public static final String COLUMN_USUARIOS = "usuarios";
         public static final String COLUMN_PASSWORD = "password";
-        public static final String COLUMN_RE_PASSWORD = "re_password";
+        public static final String COLUMN_REPASSWORD = "re_password";
     }
 }
