@@ -7,104 +7,114 @@
     android:layout_height="match_parent"
     tools:context=".Pantalla_Principal">
 
-    <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="699dp"
-        android:background="@drawable/paginainicio"
-        android:orientation="vertical"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="16dp"></LinearLayout>
-
     <TextView
-        android:id="@+id/textoNombre"
+        android:id="@+id/txtUsuario"
         android:layout_width="221dp"
         android:layout_height="46dp"
         android:textAlignment="center"
-        android:textColor="#3498DB"
+        android:textColor="#1A237E"
         android:textColorHighlight="#3498DB"
         android:textColorHint="#3498DB"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <EditText
-        android:id="@+id/editTextDate2"
-        android:layout_width="280dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="75dp"
-        android:ems="10"
-        android:hint="Escoge una Fecha"
-        android:inputType="date"
-        android:textAlignment="center"
-        android:textColor="#F7F9F9"
-        android:textColorHint="#D7DBDD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
-
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="280dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="75dp"
-        android:ems="10"
-        android:hint="Escoge una hora"
-        android:inputType="time"
-        android:textAlignment="center"
-        android:textColor="#F7F9F9"
-        android:textColorHint="#D7DBDD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="280dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="75dp"
+        android:id="@+id/txtCampo"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
         android:ems="10"
         android:hint="Escoge un campo de Juego"
         android:inputType="text"
         android:textAlignment="center"
-        android:textColor="#F7F9F9"
+        android:textColor="#1A237E"
         android:textColorHint="#D7DBDD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.166" />
+
+    <EditText
+        android:id="@+id/txtHora"
+        android:layout_width="298dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Escoge una hora"
+        android:inputType="time"
+        android:textAlignment="center"
+        android:textColor="#1A237E"
+        android:textColorHint="#D7DBDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <CalendarView
+        android:id="@+id/calenadario"
+        android:layout_width="291dp"
+        android:layout_height="322dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <TextView
+        android:id="@+id/txFechaHora"
+        android:layout_width="303dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#1A237E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
 
     <Button
         android:id="@+id/btnAgendar"
-        android:layout_width="255dp"
-        android:layout_height="52dp"
-        android:text="Agendar y Pagar"
-        android:textAlignment="center"
-        android:textColorHighlight="#D7DBDD"
-        app:backgroundTint="#5D6D7E"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:text="Agendar "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.932"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.957" />
+
+    <Button
+        android:id="@+id/btnVerReserva"
+        android:layout_width="161dp"
+        android:layout_height="53dp"
+        android:text="Ver Reserva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <ListView
+        android:id="@+id/listaMensaje"
+        android:layout_width="336dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

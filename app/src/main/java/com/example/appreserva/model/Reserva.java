@@ -1,23 +1,22 @@
 package com.example.appreserva.model;
 
-import java.util.Date;
-
 public class Reserva {
     private int id;
-    private String Usuario;
-    private Date fecha;
+    private String nombreUsuario;
+    private String fecha;
     private String hora;
-    private String nombreCampo;
+    private String campo;
+    private Double precio;
 
     public Reserva() {
     }
 
-    public Reserva(int id, String usuario, Date fecha, String hora, String nombreCampo) {
+    public Reserva(int id, String nombreUsuario, String fecha, String hora, String campo) {
         this.id = id;
-        Usuario = usuario;
+        this.nombreUsuario = nombreUsuario;
         this.fecha = fecha;
         this.hora = hora;
-        this.nombreCampo = nombreCampo;
+        this.campo = campo;
     }
 
     public int getId() {
@@ -28,19 +27,19 @@ public class Reserva {
         this.id = id;
     }
 
-    public String getUsuario() {
-        return Usuario;
+    public String getNombreUsuario() {
+        return nombreUsuario;
     }
 
-    public void setUsuario(String usuario) {
-        Usuario = usuario;
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -52,11 +51,19 @@ public class Reserva {
         this.hora = hora;
     }
 
-    public String getNombreCampo() {
-        return nombreCampo;
+    public String getCampo() {
+        return campo;
     }
 
-    public void setNombreCampo(String nombreCampo) {
-        this.nombreCampo = nombreCampo;
+    public void setCampo(String campo) {
+        this.campo = campo;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 }

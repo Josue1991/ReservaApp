@@ -22,7 +22,7 @@ public class UsuariosController {
             SQLiteDatabase baseDeDatos = db.getWritableDatabase();
             ContentValues valoresParaInsertar = new ContentValues();
             valoresParaInsertar.put("email", usuario.getEmail());
-            valoresParaInsertar.put("usuario", usuario.getUsuario());
+            valoresParaInsertar.put("usuarios", usuario.getUsuario());
             valoresParaInsertar.put("password", usuario.getPassword());
             valoresParaInsertar.put("re_password", usuario.getRePassword());
             valoresParaInsertar.put("nombre", usuario.getNombre());
